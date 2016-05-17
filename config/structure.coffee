@@ -9,21 +9,10 @@ module.exports =
       id: "home"
       location: "example#home" # Supersonic module#view type navigation
     }
-
-    {
-      title: "Index"
-      id: "index"
-      location: "example#getting-started" # Supersonic module#view type navigation
-    }
     {
       title: "Directory"
       id: "directory"
       location: "example#directory"
-    }
-    {
-      title: "Internet"
-      id: "internet"
-      location: "http://google.com" # URLs are supported!
     }
 
   ]
