@@ -1,4 +1,4 @@
-<div class="padding">
+<div class="padding" ng-controller="EventsController">
 
   <super-navbar>
     <super-navbar-title>
@@ -8,8 +8,12 @@
 
 
 
+  <super-navigate location="example#eventinfo" ng-repeat="event in events">
+    <button class="button button-block button-positive myevent"><span class="eventtitle">{{event.name}}</span> <span class="eventdate">{{event.date}}</span></button>
+  </super-navigate>
 
-  <super-navigate location="example#eventinfo">
+
+  <!-- <super-navigate location="example#eventinfo">
     <button class="button button-block button-positive myevent"><span class="eventtitle">Event1</span> <span class="eventdate">date1</span></button>
   </super-navigate>
   <super-navigate location="example#events">
@@ -17,7 +21,7 @@
   </super-navigate>
   <super-navigate location="example#">
     <button class="button button-block button-positive"> Calendar</button>
-  </super-navigate>
+  </super-navigate> -->
 
 
 </div>

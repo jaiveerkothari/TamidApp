@@ -1,4 +1,4 @@
-<div class="padding">
+<div class="padding" ng-controller="DirectoryController">
 
   <super-navbar>
     <super-navbar-title>
@@ -6,7 +6,15 @@
     </super-navbar-title>
   </super-navbar>
 
-  <ul class="list">
+
+  <super-navigate location="example#InvestmentFundTeam" ng-repeat="team in teams" data-params-id="{{team.name}}">
+    <button class="button button-block button-positive">{{team.name}}</button>
+  </super-navigate>
+  
+
+
+
+  <!-- <ul class="list">
     <li class="item">
       <super-navigate location="example#InvestmentFundTeam">
         <button class="button button-block button-positive"> Investment Fund </button>
@@ -21,6 +29,6 @@
     <li class="item">
       <p>Exec</p>
     </li>
-</ul>
+</ul> -->
 
 </div>
