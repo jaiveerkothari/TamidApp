@@ -2,7 +2,9 @@
   "name": "TamidApp",
   "version": "0.0.0",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "firebase": "^3.0.2"
+  },
   "devDependencies": {
     "grunt-steroids": "1.x"
   }
