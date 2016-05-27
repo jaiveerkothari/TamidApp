@@ -9,12 +9,8 @@ module.exports =
       id: "home"
       location: "example#home" # Supersonic module#view type navigation
     }
-    {
-      title: "Directory"
-      id: "directory"
-      location: "example#directory"
-    }
-
+    
+  
   ]
 
   # rootView:

@@ -8,6 +8,7 @@ angular
         {name:"Executive Board"}
     ]
     supersonic.ui.views.current.whenVisible(function() {
+        supersonic.ui.tabs.hide();
         $scope.$apply();
         
  });

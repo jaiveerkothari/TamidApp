@@ -4,10 +4,23 @@ angular
     $scope.persons = [];
     $scope.teamName="Team";
     supersonic.ui.views.current.whenVisible(function() {
+    	supersonic.ui.tabs.hide();
         $scope.$apply();
 
  	});
+
+    
+
  	supersonic.ui.views.current.params.onValue(function(team_name){
+
+ 		supersonic.ui.navigationBar.update({
+      		title: team_name.id
+      		
+    	}).then(
+    	supersonic.ui.navigationBar.show()
+
+    	);
+
  	    supersonic.logger.log(team_name);
  	    $scope.teamName=team_name.id;
  	    if(team_name.id=="Tech"){

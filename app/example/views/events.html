@@ -8,8 +8,8 @@
 
 
 
-  <super-navigate  ng-repeat="event in events">
-    <!-- <button class="button button-block button-positive myevent"><span class="eventtitle">{{event.name}}</span> <span class="eventdate">{{event.date}}</span></button> -->
+  <!-- <super-navigate  ng-repeat="event in events">
+    <button class="button button-block button-positive myevent"><span class="eventtitle">{{event.name}}</span> <span class="eventdate">{{event.date}}</span></button>
     <div class="list card eventcard">
       <div class="item">
         <h2>{{event.name}}</h2>
@@ -17,7 +17,21 @@
         <p>{{event.location}}</p>
       </div>
     </div>
-  </super-navigate>
+  </super-navigate> -->
+
+
+
+  <div class="contactList">
+    <ul class="list">
+      <li class="item member" ng-repeat="event in events">
+        <h2>{{event.name}} </h2>
+        <h3> {{event.date}}</h3>
+        <h3> {{event.location}}</h3>
+      </li>
+
+
+    </ul>
+  </div>
 
 
   <!-- <super-navigate location="example#eventinfo">
