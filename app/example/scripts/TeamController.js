@@ -20,7 +20,6 @@ angular
             phone: "(510)414-8533"},
 		        {name:"Jonah Adler"},
 		        {name:"Ben Kalish"},
-            {email: "hello"}
     		]
  	    }
  	    if(team_name.id=="Investment Fund"){
