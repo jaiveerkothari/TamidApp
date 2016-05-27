@@ -8,30 +8,15 @@
 
 
 
-  <!-- <super-navigate  ng-repeat="event in events">
-    <button class="button button-block button-positive myevent"><span class="eventtitle">{{event.name}}</span> <span class="eventdate">{{event.date}}</span></button>
-    <div class="list card eventcard">
-      <div class="item">
-        <h2>{{event.name}}</h2>
-        <p>{{event.date}}</p>
-        <p>{{event.location}}</p>
-      </div>
-    </div>
-  </super-navigate> -->
 
+  <super-navigate location="example#eventinfo" ng-repeat="event in events" data-params-id="{{event.name}}">
+    <button class="button button-block button-positive myevent">
+      <span class="eventtitle"><h3>{{event.name}}</h2></span>
+      <span class="eventlocation"><h4>{{event.location}}</h4></span>
+      <span class="eventdate"><h4>{{event.date}}</h4></span>
+    </button>
+  </super-navigate>
 
-
-  <div class="contactList">
-    <ul class="list">
-      <li class="item member" ng-repeat="event in events">
-        <h2>{{event.name}} </h2>
-        <h3> {{event.date}}</h3>
-        <h3> {{event.location}}</h3>
-      </li>
-
-
-    </ul>
-  </div>
 
 
   <!-- <super-navigate location="example#eventinfo">

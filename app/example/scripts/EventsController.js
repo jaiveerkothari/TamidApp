@@ -7,8 +7,9 @@ angular
         {name:"Gala", date:"May 31st", location:"Norris Loius Room"}
     ]
     supersonic.ui.views.current.whenVisible(function() {
+    	supersonic.ui.tabs.hide();
         $scope.$apply();
-        
+
  });
-    
+
 });

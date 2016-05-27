@@ -1,8 +1,8 @@
-<div class="padding">
+<div class="padding" ng-controller="EventsInfoController">
 
   <super-navbar>
     <super-navbar-title>
-      Event 1
+      {{eventName}}
     </super-navbar-title>
   </super-navbar>
 
@@ -10,8 +10,19 @@
     <button class="button button-block button-positive"> Check In</button>
   </super-navigate>
 
+  <div class="infoList">
+    <ul class="list">
+      <li class="item member" ng-repeat="event in events">
+        <h2> {{event.info}} </h2>
+      </li>
+
+
+    </ul>
+  </div>
+
+<!--
 <div>
 	This is info about event 1.
 </div>
-
+-->
 </div>
