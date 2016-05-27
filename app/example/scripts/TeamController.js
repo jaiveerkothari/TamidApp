@@ -5,17 +5,22 @@ angular
     $scope.teamName=null;
     supersonic.ui.views.current.whenVisible(function() {
         $scope.$apply();
-        
+
  	});
  	supersonic.ui.views.current.params.onValue(function(team_name){
  	    supersonic.logger.log(team_name);
  	    $scope.teamName=team_name.id;
  	    if(team_name.id=="Tech"){
  	    	$scope.persons = [
-		        {name:"Isabel Benatar"},
-		        {name:"David Wallach"},
+		        {name:"Isabel Benatar",
+            email: "isabelbenatar2018@u.northwestern.edu",
+            phone: "(650)862-6055"},
+		        {name:"David Wallach",
+            email: "davidwallach2018@u.northwestern.edu",
+            phone: "(510)414-8533"},
 		        {name:"Jonah Adler"},
-		        {name:"Ben Kalish"}
+		        {name:"Ben Kalish"},
+            {email: "hello"}
     		]
  	    }
  	    if(team_name.id=="Investment Fund"){
@@ -29,7 +34,7 @@ angular
  	    	$scope.persons = [
 		        {name:"Aniket Lila"},
 		        {name:"John Doe"}
-		
+
     		]
  	    }
  	    if(team_name.id=="Executive Board"){
@@ -37,10 +42,10 @@ angular
 		        {name:"Naomi Gutstein"},
 		        {name:"Darren Jacoby"},
 		        {name:"Ben Weiss"}
-		       
+
     		]
- 	    } 	    
+ 	    }
  	    $scope.$apply();
  	});
-    
+
 });
