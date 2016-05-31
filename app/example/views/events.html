@@ -10,12 +10,14 @@
 
 
   <super-navigate location="example#eventinfo" ng-repeat="event in events" data-params-id="{{event.name}}">
-    <button class="button button-block button-positive myevent">
-      <span class="eventtitle"><h3>{{event.name}}</h2></span>
+    <button class="button button-block button-positive eventButton">
+      <span class="eventtitle"><h3>{{event.name}}</h3></span>
       <span class="eventlocation"><h4>{{event.location}}</h4></span>
       <span class="eventdate"><h4>{{event.date}}</h4></span>
     </button>
   </super-navigate>
+
+  
 
 
 
