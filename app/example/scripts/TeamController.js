@@ -27,13 +27,17 @@ angular
  	    	$scope.teamName="Tech";
  	    	$scope.persons = [
 		        {name:"Isabel Benatar",
-            email: "isabelbenatar2018@u.northwestern.edu",
-            phone: "(650)862-6055"},
+                    email: "isabelbenatar2018@u.northwestern.edu",
+                    phone: "(650)862-6055"},
 		        {name:"David Wallach",
-            email: "davidwallach2018@u.northwestern.edu",
-            phone: "(510)414-8533"},
-		        {name:"Jonah Adler"},
-		        {name:"Ben Kalish"},
+                    email: "davidwallach2018@u.northwestern.edu",
+                    phone: "(510)414-8533"},
+		        {name:"Jonah Adler",
+                    email: "jonahadler2018@u.northwestern.edu",
+                    phone: "(470)555-8564"},
+		        {name:"Ben Kalish",
+                    email: "benkalish2018@u.northwestern.edu",
+                    phone: "(890)414-8983"}
     		]
  	    }
  	    if(team_name.id=="Investment Fund"){
