@@ -13,7 +13,7 @@ angular
  	    $scope.eventName=event_name.id;
  	    if(event_name.id=="Town Hall"){
  	    	$scope.events = [
-		        {info: "This is mandatory"}
+		        {info: "infooo"}
     		]
  	    }
  	    if(event_name.id=="Tamixer"){
@@ -23,7 +23,7 @@ angular
  	    }
 		if(event_name.id=="Gala"){
  	    	$scope.events = [
-            {info: "partayyyy"}
+            {info: "The end of the year Tamid Gala. All groups will be presenting on the work they have done this year. Fund will be doing stock pitches, followed by a demo from Tech and then project updates from Consulting. Food will be provided."}
     		]
  	    }
  	    $scope.$apply();
